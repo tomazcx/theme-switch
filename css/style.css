@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292C35;
+}
+
+body main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+div#switch {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #000000;
+    padding: .8rem;
+    border-radius: 3rem;
+    width: 12%;
+    height: 10%;
+}
+
+img {
+    width: 5vw;
+}
+
+div#button {
+    position: absolute;
+    z-index: 1;
+    right: 44vw;
+    bottom: 44.5vh;
+    background-color: white;
+    border-radius: 100%;
+    width: 4.7rem;
+    height: 4.7rem;
+}
+
+body.theme {
+    background-color: white;
+}
+
+div#button.animar1 {
+    animation: slideLeft .3s forwards;
+}
+
+div#button.animar2 {
+    animation: slideRight .3s forwards;
+}
+
+@keyframes slideRight {
+    from {
+        right: 50.5vw;
+    }
+    to {
+        right: 44vw;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        right: 44vw;
+    }
+    to {
+        right: 50.5vw;
+    }
+}

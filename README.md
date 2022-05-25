@@ -1,0 +1,1 @@
+A simple button that switches between dark and light theme, developed using HTML, CSS and JS. Made for a Rocketseat's challenge, available at: https://app.rocketseat.com.br/discover/challenges/theme-switcher
